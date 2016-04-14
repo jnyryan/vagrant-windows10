@@ -18,20 +18,16 @@ You'll need both these to get going.
 wget -O ~/Downloads/win10x64Pro.box http://1drv.ms/1RVqzCv
 vagrant box add win10x64Pro ~/Downloads/win10x64Pro.box
 ```
-
 2. Download this repository containing the Vagrant scripts
 ```
 git clone https://github.com/jnyryan/vagrant-windows10.git
 cd vagrant-windows10
 ```
-
 3. Start the VM
 ```
 vagrant up
 ```
-
-  After a minute of the provisioning process the VM will start up.
-
+After a minute of the provisioning process the VM will start up.
 4. All done, then shut it down
 ```
 vagrant halt
