@@ -9,7 +9,7 @@ Vagrant.configure(2) do |config|
 
   # Every Vagrant virtual environment requires a box to build off of.
   config.vm.box = "win10x64Pro"
-  config.vm.box_url = "http://1drv.ms/23vSyQi"
+  config.vm.box_url = "http://1234"
 
   config.vm.guest = :windows
   config.vm.communicator = "winrm"

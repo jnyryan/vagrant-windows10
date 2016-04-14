@@ -16,7 +16,7 @@ You'll need both these to get going.
 1. Download the virtual box Windows 10 image and add it to the Vagrant Library
 
   ``` bash
-  wget -O ~/Downloads/win10x64Pro.box http://1drv.ms/1RVqzCv
+  wget -O ~/Downloads/win10x64Pro.box http://url/to/image
   vagrant box add win10x64Pro ~/Downloads/win10x64Pro.box
   ```
 
