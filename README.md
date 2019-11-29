@@ -2,7 +2,6 @@
 
 A windows 10 virtual machine setup to run under VagrantUp and VirtualBox
 
-
 ## Prerequisites
 
 You'll need both these to get going.
@@ -15,14 +14,14 @@ You'll need both these to get going.
 
 1. Download the virtual box Windows 10 image and add it to the Vagrant Library
 
-  ``` bash
+  ```bash
   wget -O ~/Downloads/win10x64Pro.box http://url/to/image
   vagrant box add win10x64Pro ~/Downloads/win10x64Pro.box
   ```
 
 2. Download this repository containing the Vagrant scripts
 
-  ```
+  ```bash
   git clone https://github.com/jnyryan/vagrant-windows10.git
   cd vagrant-windows10
   ```
@@ -36,11 +35,14 @@ You'll need both these to get going.
   After a minute of the provisioning process the VM will start up.
 
 4. All done, then shut it down
-  ```
+
+  ```bash
   vagrant halt
   ```
+  
   or destroy it
-  ```
+  
+  ```bash
   vagrant destroy
   ```
 
@@ -55,14 +57,12 @@ Method
 - Configure it to be used with Vagrant
   - create user and pwd as vagrant
   - get latest updates
-  - change it's name to VagrantPC
+  - change its name to VagrantPC
   - Reduce the size of the image
 - Create the vagrant "box"
 - add the box to your vagrant library
 - Create a Vagrantfile so start it up
 
-
-1.
   http://huestones.co.uk/node/305
 
   http://kamalim.github.io/blogs/how-to-create-you-own-vagrant-base-boxes/
@@ -83,7 +83,7 @@ Method
 
 ### Package the box
 
-```
+```bash
 cd </usr/location/of/image>
 vagrant package --base win10x64Pro-vagrantbase --output win10x64Pro.box
 vagrant box add win10x64Pro win10x64Pro.box
@@ -91,7 +91,7 @@ vagrant box add win10x64Pro win10x64Pro.box
 
 ### Repackage the box after making additions
 
-```
+```bash
 cd </usr/location/of/image>
 vagrant package --output win10x64ProUpdate.box
 vagrant box add win10x64ProUpdate win10x64ProUpdate.box
